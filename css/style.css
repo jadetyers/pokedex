@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background: #EFEF88;
-    background: linear-gradient(to right, #D4D3DD, #EFEF88);
+    background: linear-gradient(to right, #b7caec, #ffffa0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: 'Lato';
     margin: 0;
+    position: relative;
 }
 
 .title {
@@ -48,11 +53,11 @@ body {
 
 .pokemon .img-container img {
 	margin-top: 20px;
-	max-width: 90%;
+	max-width: 80%;
 }
 
 .pokemon .info {
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .pokemon .number {

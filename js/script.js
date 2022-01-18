@@ -19,7 +19,7 @@ const colours = {
 
 const mainTypes = Object.keys(colours);
 
-console.log(mainTypes);
+// console.log(mainTypes);
 
 const fetchPokemon = async () => {
     for (let i = 1; i <= pokemonCount; i++) {
@@ -31,7 +31,7 @@ const getPokemon = async id => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const result = await fetch(url);
     const pokemon = await result.json();
-    console.log(pokemon);
+    // console.log(pokemon);
     createPokemonCard(pokemon);
 }
 
